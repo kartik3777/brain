@@ -1,6 +1,37 @@
 import React from 'react'
 import "./pages.css";
 
+function Second(){
+  return (
+    <div className='second'>
+         <div className="head">
+         <h1>What We Offer</h1>
+         </div>
+        
+         <div className="out-box-1">
+         <div className="scholar-1">
+          <div className="scholar-1-content">
+          <h1>One-to-One Mentoring</h1>
+          <p>
+          Brain Files offers invaluable personalized mentoring, providing students with one-on-one guidance from experienced educators. This tailored approach allows students to address specific learning needs, clarify doubts, and refine study strategies according to their individual requirements. Through personalized sessions, learners can deepen their understanding of subjects, enhance problem-solving skills, and improve overall academic performance. The supportive environment fosters confidence and empowers students to excel. Ultimately, personalized mentoring at Brain Files ensures a more effective and efficient learning experience, catering to the unique needs of each student.
+          </p>
+          </div>
+         </div>
+         </div>
+         <div className="out-box-2">
+         <div className="scholar-2">
+          <div className="scholar-2-content">
+          <h1>Scholarship on Coaching Fees Based on Merit List</h1>
+          <p>
+          Brain Files Coaching Institute provides scholarships to candidates based on their performance in entrance exams or merit assessments. These scholarships aim to alleviate financial constraints related to coaching fees, ensuring access to quality education regardless of socioeconomic backgrounds. By offering such support, the institute promotes equal opportunities for all students, fostering academic excellence and diversity within the student body. This initiative underscores Brain Files Coaching Institute's dedication to education as a tool for empowerment and societal progress, shaping a more equitable and prosperous future for individuals from diverse backgrounds.
+          </p>
+          </div>
+         </div>
+         </div>
+    </div>
+  );
+}
+
 function Home() {
   return (
     <div>
@@ -22,6 +53,8 @@ With a team of highly qualified and experienced faculty members, BrainFiles is c
 </p>
 </div>
       </div>
+
+      <Second />
     </div>
   )
 }

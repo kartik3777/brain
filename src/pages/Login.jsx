@@ -7,8 +7,6 @@ const studentData = [];
 
 function Login() {
   
- 
-
 
 
   
