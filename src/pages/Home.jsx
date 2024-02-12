@@ -36,7 +36,15 @@ function Home() {
   return (
     <div>
       <div className="main">
-        <img src="./winter-blue-pink-gradient-background-vector_53876-117275.avif" alt="" />
+        {/* <img src="./welcome.png" alt="" /> */}
+        <div className="welcome-content">
+          <div className="welcome-note">
+            <h2>Welcome to BrainFiles.in</h2>
+            <h1>Unique Education System <br />that pushes you to success</h1>
+            <p>Hey, Jee aspirant here is your digital coaching to fulfill your dream to become an IITian Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, vitae? Lorem ipsum dolor sit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, consectetur!</p>
+          </div>
+        </div>
+
       </div>
         <div className="about-box">
         

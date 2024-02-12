@@ -6,9 +6,8 @@ function NavBar(){
     return(
         <div className="outer">
      <div className="nav">
-        
         <div className="heading">
-        <img src="./logo_trans.svg" alt="" />
+        <img src="./logo.jpg" alt="" />
             <h1>Brain Files</h1>
         </div>
          <ul>
@@ -18,7 +17,6 @@ function NavBar(){
              <li><Link to="/Contact">Contact</Link></li>
              <li><Link to="/">Home</Link></li>
          </ul>
-        
     </div>
     <Outlet />
     </div>
