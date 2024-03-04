@@ -6,8 +6,9 @@ import About from "./pages/About";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Pyq from "./pages/Pyq";
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+
+// import { initializeApp } from "firebase/app";
+// import { getAnalytics } from "firebase/analytics";
 
 // import NavBar from "./pages/NavBar";
 

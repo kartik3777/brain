@@ -1,51 +1,13 @@
 import {React, useState} from 'react'
-
+import './login.css'
 
 function Login() {
   
-  // const [loginData, setLoginData] = useState({
-  //   name:"",
-  //   email: "",
-  //   phone:"",
-  //   yourClass: ""
-  // })
-  // const [emailData, setEmail] = useState("");
-  // const [phoneData, setPhone] = useState("");
-  // const [nameData, setName] = useState("");
-  // const [classData, setClass] = useState("");
-  
-
-  // function handleChange(e){
-  // const {name, value} = e.target;
-  // setLoginData((prev) => {
-  //   return {...prev,
-  //      [name] :value
-  //     }
-  // })
- 
-  // }
-
-  // function called(){
-  //   setEmail(loginData.email);
-  //   setPhone(loginData.phone);
-  //   setClass(loginData.yourClass);
-  //   setName(loginData.name);
-    
-  //   setLoginData({
-  //     name:"",
-  //     email: "",
-  //     phone:"",
-  //     yourClass: ""
-  //   })
- 
-  // }
-
- 
 
   return (
     <div>
        {/* <h1 id="msg">k</h1> */}
-      <div className='login-position'>
+      <div className=''>
     <div className='login-box'>
        <form >
         <div className='login-heading'>Register</div>
@@ -83,7 +45,7 @@ function Login() {
   )
  
   function remover(){
-    document.getElementsByClassName("login-position")[0].style.display ="none";
+    document.getElementsByClassName("login-box")[0].style.display ="none";
   }
 
   function handleClick(){
@@ -120,7 +82,7 @@ function Login() {
     //  document.getElementsByClassName("student-input")[3].value ="";
     //  document.querySelector("#sub").value = "Submitted"
    
-   document.getElementsByClassName("login-position")[0].style.display ="none";
+   document.getElementsByClassName("login-box")[0].style.display ="none";
    
 
   }

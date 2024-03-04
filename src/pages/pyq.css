@@ -1,0 +1,61 @@
+
+.pyq-outbox{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: 10px;
+}
+.pyq-outbox h1{
+    text-align: center;
+    color: rgb(1, 43, 42);
+}
+.pyq-outbox p{
+    text-align: center;
+}
+.mani{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 10px 100px;
+    
+}
+.mani .style{
+
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+   
+}
+.style li{
+    list-style-type: none;
+    
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(34, 54, 90);
+    border-radius: 20px;
+   
+}
+.style h4{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 5px;
+    border-bottom: 1px solid rgb(118, 118, 118);
+    color: white;
+}
+.style li ul li{
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    
+}
+
+@media only screen and (max-width: 1000px) {
+   .mani{
+    padding: 10px 20px;
+   }
+   .pyq-outbox{
+    top: 75px;
+ 
+}
+    
+  }
