@@ -57,19 +57,7 @@ function Pyq() {
           })}
         </ul>
 
-        {/* <ul className="style">
-        {data.map((item, index) => {
-            return (
-              <ExamPaper
-                name={item.name}
-                paperLink1={item.paperLink1}
-                type1={item.type1}
-                type2={item.type2}
-                paperLink2={item.paperLink2}
-              />
-            );
-          })}
-        </ul> */}
+        
       </div>
       <Footer />
     </div>

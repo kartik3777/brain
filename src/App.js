@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Pyq from "./pages/Pyq";
+import Success from "./pages/Success";
 
 // import { initializeApp } from "firebase/app";
 // import { getAnalytics } from "firebase/analytics";
@@ -25,6 +26,7 @@ function App() {
           <Route path="Contact" element={<Contact />} />
           <Route path="Pyq" element={<Pyq />} />
           <Route path="About" element={<About/>} />
+          <Route path="Success" element={<Success/>} />
         </Route>
         </Routes>
     {/* </Router> */}

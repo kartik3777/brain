@@ -34,7 +34,7 @@
   }
 
   
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1000px) {
     .nav ul li {
       /* background-color: #00bbbb; */
       display: none;
