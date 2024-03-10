@@ -15,7 +15,8 @@
 .addmi h2{
     padding: 15px 0px;
     padding-bottom: 5px;
-   color: rgb(19, 214, 204);
+   /* color: rgb(19, 214, 204); */
+   color: rgb(50, 50, 226);
     /* border-bottom: 1px solid rgb(32, 47, 216); */
     width: 60%;
    display: grid;
@@ -28,7 +29,10 @@
    /* margin: 10px; */
    /* border: 1px solid black; */
 }
-
+body{
+    margin: 0;
+    padding: 0;
+}
 .addmi ul li{
     margin: 10px;
     margin-top: 19px;
@@ -37,13 +41,16 @@
 }
 @media only screen and (max-width: 700px) {
    .addmi{
-      
-      margin-top: 100px;
+      position: relative;
+      top: 70px;
+   }
+   .footer{
+    margin-top: 90px;
    }
    .addmi h2{
     font-weight: 500;
     /* color: rgb(0, 170, 255); */
-    color: rgb(66, 219, 212);
+    color: rgb(52, 64, 197);
       width: auto;
       padding-bottom: 10px;
    }
@@ -135,6 +142,7 @@ border: 1px solid rgba(0, 0, 0, 0.21); */
     flex-direction: column;
     gap: 10px;
     margin: 20px 50px;
+    /* margin-top: 100px; */
     box-shadow: 0px 0px 2px rgb(212, 212, 212);
     z-index: -2;
     overflow: hidden;

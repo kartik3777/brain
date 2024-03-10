@@ -1,44 +1,51 @@
-import React from 'react'
-import "./contact.css"
+import React from "react";
+import "./contact.css";
 import { CiPhone } from "react-icons/ci";
 import { CiMail } from "react-icons/ci";
-import Footer from './Footer'
+import Footer from "./Footer";
 
 //https://script.google.com/macros/s/AKfycbxV2GcO0XcD5BWxlaCdIZ2LicXkdFVfD37xLh54GIcY-7zfLUZJKMiHXRHm_hm4SlYm/exec
 
 function FormContact() {
-
   function handleContactForm() {
-
     let form = document.querySelector("form");
     // The document.querySelector() method returns the first element that matches a specified CSS selector.
-    form.addEventListener('submit', (e) => {
+    form.addEventListener("submit", (e) => {
       e.preventDefault();
 
       document.querySelector("#submit").value = "Submiting..";
 
       let data = new FormData(form);
 
-      fetch('https://script.google.com/macros/s/AKfycbxV2GcO0XcD5BWxlaCdIZ2LicXkdFVfD37xLh54GIcY-7zfLUZJKMiHXRHm_hm4SlYm/exec', {
-        method: "POST",
-        body: data
-      })
+      fetch(
+        "https://script.google.com/macros/s/AKfycbxV2GcO0XcD5BWxlaCdIZ2LicXkdFVfD37xLh54GIcY-7zfLUZJKMiHXRHm_hm4SlYm/exec",
+        {
+          method: "POST",
+          body: data,
+        }
+      )
+        .then((res) => res.text())
 
-        .then(res => res.text())
-
-        .then(data => {
-
-          document.querySelector("#submit").value = "Submitted  "
-          document.getElementsByClassName("Query-input")[0].style.display = "none"
-          document.getElementsByClassName("Query-input")[1].style.display = "none"
-          document.getElementsByClassName("Query-input")[2].style.display = "none"
-          document.getElementsByClassName("Query-input")[3].style.display = "none"
-          document.getElementsByClassName("Query-input")[4].style.display = "none"
-          document.getElementsByClassName("Query-input")[5].style.display = "none"
+        .then((data) => {
+          document.querySelector("#submit").value = "Submitted  ";
+          document.getElementsByClassName("Query-input")[0].style.display =
+            "none";
+          document.getElementsByClassName("Query-input")[1].style.display =
+            "none";
+          document.getElementsByClassName("Query-input")[2].style.display =
+            "none";
+          document.getElementsByClassName("Query-input")[3].style.display =
+            "none";
+          document.getElementsByClassName("Query-input")[4].style.display =
+            "none";
+          document.getElementsByClassName("Query-input")[5].style.display =
+            "none";
           // document.querySelector("#submit").style.color = "green"
-          document.getElementsByClassName("main-form")[0].style.backgroundColor = "white"
+          document.getElementsByClassName(
+            "main-form"
+          )[0].style.backgroundColor = "white";
         });
-    })
+    });
 
     //  document.getElementsByClassName("student-input")[0].value ="";
     //  document.getElementsByClassName("student-input")[1].value ="";
@@ -47,54 +54,85 @@ function FormContact() {
     //  document.querySelector("#sub").value = "Submitted"
 
     //  document.getElementsByClassName("login-box")[0].style.display ="none";
-
   }
 
+  return (
+    <>
+      <div className="outerForm">
+        <div className="formHead">
+          <span>Are You a JEE/NEET(UG) Aspirant</span>
+          <p>We will get back to you soon!</p>
+        </div>
 
-
-  return <>
-    <div className="outerForm">
-      <div className="formHead">
-        <span>Are You a JEE-Aspirant/NEET(UG)</span>
-        <p>We will get back you soon!</p>
+        <div className="main-form">
+          <form>
+            <div className="inside-form">
+              <input
+                className="Query-input"
+                name="name"
+                type="text"
+                placeholder="Name"
+              />
+              <input
+                className="Query-input"
+                name="email"
+                type="text"
+                placeholder="Enter email"
+              />
+              <input
+                className="Query-input"
+                name="phone"
+                type="text"
+                placeholder="Phone-number"
+              />
+              <input
+                className="Query-input"
+                name="yourClass"
+                type="text"
+                placeholder="Your-Class"
+              />
+              <select className="Query-input" name="exam" type="text">
+                <option  value="" disabled selected hidden>
+                  Target Exam
+                </option>
+                <option  value="IIT JEE">IIT JEE</option>
+                <option value="NEET">NEET</option>
+                <option value="CUET">CUET</option>
+                <option value="Others">Others</option>
+              </select>
+              {/* <input className='Query-input' name='exam' type="text" placeholder="Target Exam" /> */}
+              <input
+                className="Query-input"
+                name="query"
+                type="text"
+                placeholder="Any query?"
+              />
+              <div className="submit">
+                <input
+                  onClick={handleContactForm}
+                  id="submit"
+                  type="submit"
+                  value="Submit"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
-
-      <div className="main-form">
-        <form>
-          <div className="inside-form">
-            <input className='Query-input' name='name' type="text" placeholder="Name" />
-            <input className='Query-input' name='email' type="text" placeholder="Enter email" />
-            <input className='Query-input' name='phone' type="text" placeholder="Phone-number" />
-            <input className='Query-input' name='yourClass' type="text" placeholder="Your-Class" />
-            <input className='Query-input' name='exam' type="text" placeholder="For which Exam you are preparing" />
-            <input className='Query-input' name='query' type="text" placeholder="Any query?" />
-            <div className="submit"><input onClick={handleContactForm} id='submit' type="submit" value="Submit" /></div>
-          </div>
-
-        </form>
-      </div>
-
-    </div>
-
-
-
-
-  </>
+    </>
+  );
 }
 
 function Contact() {
   return (
     <>
-      <div className='contactus'>
+      <div className="contactus">
         <h1>Contact Us</h1>
         <div className="contact-page">
-          
-
-
-
           <div className="contact-2">
             <div className="para">
               <p>
+
                 <span>Reach out to us</span>
                 <br />
                 Get your questions answered about learning with Brain Files.
@@ -132,14 +170,12 @@ function Contact() {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
-
         </div>
-
       </div>
       <FormContact />
       <Footer />
     </>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

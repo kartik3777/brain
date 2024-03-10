@@ -13,14 +13,14 @@ function Login() {
         <div className='login-heading'>Register</div>
         <div className='cont2'>
         <div className='input-field' >
-          <input  className='student-input' name='name' type="text" required spellCheck="false" />
+          <input  className='student-input' name='name' type="text" required spellCheck="fakse" />
           <label>Name</label>
          </div>
 
-        <div className='input-field' >
+        {/* <div className='input-field' >
           <input  className='student-input' name='email' type="text" required spellCheck="false" />
           <label>Enter email</label>
-         </div>
+         </div> */}
        
         <div className='input-field'>
           <input className='student-input' name='phone' type="text" required spellCheck="false" /> 
@@ -47,7 +47,7 @@ function Login() {
   function remover(){
     document.getElementsByClassName("login-box")[0].style.display ="none";
   }
-
+//https://script.google.com/macros/s/AKfycbx1DGqbVEucVw2YCKOz-LeHkYvcPJL9LMqZQ3ynTVEtF3q0TUuDYD2S5M73-N5VUUwlhg/exec
   function handleClick(){
     let form = document.querySelector("form");
     // The document.querySelector() method returns the first element that matches a specified CSS selector.
@@ -58,7 +58,7 @@ function Login() {
         // Change the value of the submit button to "Submitting..." while the form is being submitted.
         let data = new FormData(form);
         // The FormData() method creates a new FormData object that contains the values of all the form fields.
-        fetch('https://script.google.com/macros/s/AKfycbxw2hYHY469VxmdMtVeOF9Jt9kx2PfRMFWxI1LJYk5Nr92ix5RguyOhm4ZVGbDOPymj4A/exec', {
+        fetch('https://script.google.com/macros/s/AKfycbx1DGqbVEucVw2YCKOz-LeHkYvcPJL9LMqZQ3ynTVEtF3q0TUuDYD2S5M73-N5VUUwlhg/exec', {
                 method: "POST",
                 body: data
             })

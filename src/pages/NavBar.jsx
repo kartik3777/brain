@@ -9,19 +9,22 @@ function NavBar(){
         <>
         <div className="outer">
      <div className="nav">
-        <div className="heading">
+     <Link to="/">
+     <div className="heading">
       
-            <img src="./name_heading-Photoroom.jpg" alt="" />
-        </div>
+      <img src="./logo.png" alt="" />
+  </div>
+     </Link>
+        
          <ul>
            
              <li><Link to="/">Home</Link></li>
-             <li><Link to="/About">About</Link></li>
+             <li><Link to="/Success">Our Success</Link></li>
              <li><Link to="/Pyq">Resources</Link></li>
+             <li><Link to="/Programme">Our Programs</Link></li>
              <li><Link to="/Contact">Contact</Link></li>
-             <li><Link to="/Success">Success</Link></li>
             
-            <span id='open' onClick={khulJa} className="open" style= {{fontSize: "40px",color:"white", cursor:"pointer"}} >&#9776;</span>
+            <span id='open' onClick={khulJa} className="open" style= {{fontSize: "40px",color:"black", cursor:"pointer"}} >&#9776;</span>
 
          </ul>
          </div>
@@ -31,9 +34,9 @@ function NavBar(){
     <ul id="menu-bar" onClick={khulJa}>
           {/* <li><Link to="/Login">Login</Link></li> */}
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/About">Success</Link></li>
+          <li><Link to="/Success">Our Success</Link></li>
           <li><Link to="/Pyq">Resources</Link></li>
-          <li><Link to="/Success">Programme</Link></li>
+          <li><Link to="/Programme">Our Programs</Link></li>
           <li><Link to="/Contact">Contact</Link></li>
           
          {/* <span id='open' className="open" style= {{fontSize: "40px",color:"black", cursor:"pointer"}} >&#9776;</span> */}

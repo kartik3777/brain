@@ -2,11 +2,11 @@ import React from "react";
 import {Route, Routes, BrowserRouter } from "react-router-dom";
 import Contact from "./pages/Contact";
 import NavBar from "./pages/NavBar";
-import About from "./pages/About";
+import Success from "./pages/Success";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Pyq from "./pages/Pyq";
-import Success from "./pages/Success";
+import Programme from "./pages/Programme";
 
 // import { initializeApp } from "firebase/app";
 // import { getAnalytics } from "firebase/analytics";
@@ -25,8 +25,8 @@ function App() {
           <Route path="Login" element={<Login />} />
           <Route path="Contact" element={<Contact />} />
           <Route path="Pyq" element={<Pyq />} />
-          <Route path="About" element={<About/>} />
           <Route path="Success" element={<Success/>} />
+          <Route path="Programme" element={<Programme/>} />
         </Route>
         </Routes>
     {/* </Router> */}

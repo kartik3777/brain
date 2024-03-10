@@ -37,7 +37,7 @@ function Pyq() {
   return (
     <>
     <div className="pyq-outbox" id="pyq-outbox">
-      <h1>Previous Year Papers | Jee Mains & Advanced</h1>
+      <h1>Pyqs | Jee Advanced</h1>
       <p>
         Find accurate answers along with test papers & text solutions for major
         exams here.

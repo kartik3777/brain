@@ -1,82 +1,66 @@
-import React from 'react'
-import { FaSchool } from "react-icons/fa";
-import { SlChemistry } from "react-icons/sl";
-import { FaUserDoctor } from "react-icons/fa6";
-import "./pages.css";
+import React from "react";
 import Footer from "./Footer";
-import "./about.css"
+import "./about.css";
 
-function Admission() {
-    return (
-        <>
 
-            <div className="addmi">
-                <h2>We invites you for addmission in OFFLINE and ONLINE mode </h2>
-                <ul id="add">
-                    <li>
-                        One Year Classroom Programme for IIT-JEE (Main & Advanced)
-                        [For 11 moving to 12]
-                    </li>
-                    <li>
-                        One Year Classroom Programme for IIT-JEE (Main & Advanced)
-                        [For dropper's]
-                    </li>
-                    <li>
-                        Two Year Classroom Programme for IIT-JEE (Main & Advanced)
-                        [For 10 Moving to 11 Students]
-                    </li>
-                    <li>
-                        One Year/Two Year Classroom Programme for NEET (U.G.)  [For
-                        11 , 12 & 12 Passout Students]
-                    </li>
-                    <li>
-                        One Year Classroom Programme for CUET
-                        [For dropper's]
-                    </li>
-                </ul>
+
+function About() {
+  return (
+    <>
+      <div>
+        <div className="results-cont">
+          <div className="results-1">
+            <span>RESULTS HIGHLIGHTS FROM OUR FIRST BATCH @ KANPUR CENTER</span>
+          </div>
+          <div className="results-2">
+
+            <div className="bachhi">
+              <div className="bachhi-dp">
+                <img src="harshita.jpg" alt="" />
+              </div>
+              <p className="result-name">
+                Harshita Awasthi
+              </p>
+              <p>B.Tech IIT Kanpur</p>
+              <p>Aerospace Engineering</p>
             </div>
-        </>
-    );
+            <div className="bachhi">
+              <div className="bachhi-dp">
+                <img src="aabha.jpg" alt="" />
+              </div>
+              <p className="result-name">
+                {" "}
+                <>Aabha</>
+              </p>
+              <p>B.Tech IIT Bhu</p>
+              <p>Mechanical Engineering</p>
+            </div>
+
+
+
+          </div>
+          <div className="results-3">
+            <div className="result-word">
+              <ul>
+                <li>
+                  <p>•</p>12 Students Selected in JEE-Advanced 2023
+                </li>
+                <li>
+                  <p>•</p>2 Students Got 99%tile and above in JEE-Main 2023
+                </li>
+                <li>
+                  <p>•</p>21 Students Selected in JEE-Main 2023
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      {/* <Admission /> */}
+      <Footer />
+    </>
+  );
 }
 
-function Success() {
-    return (
-        <>
-            <div>
-                <h1 style={{ textAlign: "center", marginTop: "10px", textDecoration: "underline" }}>We offer Programme</h1>
-            </div>
-            <div>
-                <div className='rightdiv' style={{ textAlign: "center" }}>
-                    <div className='rigthdivcard'>
-                        <SlChemistry className='icons fa-4x' />
-                        <h4 style={{ color: "blue", fontSize: "25px" }}>IIT JEE</h4>
-                        {/* <p >1000+ enrolled</p> */}
-                    </div>
-
-                    <div className='rigthdivcard'>
-                        <FaUserDoctor className='icons' />
-                        <h4 style={{ color: "blue", fontSize: "25px" }}>NEET(UG)</h4>
-                        {/* <p >1000+ enrolled</p> */}
-                    </div>
-                    <div className='rigthdivcard'>
-                        <FaSchool className='icons' />
-                        <h4 style={{ color: "blue", fontSize: "25px" }}>CUET</h4>
-                        {/* <p >1000+ enrolled</p> */}
-                    </div>
-
-
-                </div>
-
-
-            </div>
-            <Admission />
-            <Footer />
-        </>
-
-
-    )
-
-
-
-}
-export default Success
+export default About;

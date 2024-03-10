@@ -8,7 +8,7 @@ const data =[
 
     },
     {
-        name : "JEE (Advanced 202)2",
+        name : "JEE (Advanced 2022)",
         paperLink1:"https://jeeadv.ac.in/past_qps/2022_1_English.pdf",
         type1:"1",
         paperLink2:"https://jeeadv.ac.in/past_qps/2022_2_English.pdf",

@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-
 .contactus {
     position: relative;
     z-index: -1;
@@ -13,24 +11,18 @@
 .contact-address {
   margin: 12px;
 }
-
 .para {
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
   /* margin: 10px; */
-  padding: 10px;
+  /* padding: 10px; */
   border-bottom: 1px solid grey;
 }
-
 .para span {
   font-size: 20px;
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-
-
-
 .iframe {
   height: 60%;
   width: 100%;
@@ -38,20 +30,18 @@
   /* padding: 2px; */
   /* background-color: #00bbbb; */
 }
-
 .first-nest {
   margin-top: 100px;
   height: 200px;
   width: 300px;
   background-color: #00bbbb;
 }
-
 .infox{
   cursor: pointer;
   
-  border: 1px solid rgb(157, 157, 157);
+  border: 1px solid rgb(184, 184, 184);
   /* box-shadow: 0px 0px 10px rgb(154, 154, 154); */
-  background-color: #d3fffb;
+  background-color: #e3edf9;
   padding: 20px 30px;
   text-align: center;
   border-radius: 15px;
@@ -60,55 +50,44 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 .info2 {
   /* height: 300px; */
   /* margin-left: 10px; */
   /* width: 90%; */
-  
   display: flex;
   flex-direction: column;
-  
   gap: 20px;
-  
 }
 
 .info2 h1 {
   border-bottom: 1px solid black;
 }
-
 .exp {
   /* background-color: #D8B5FF; */
   padding: 5px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
 }
-
 .exp p {
   margin: 7px;
 }
-
-
 .profile .upper-details {
   /* height: 140px; */
-
   padding: 10px;
   /* background-color: #c7fff7; */
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-
 .profile .phone {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .profile {
   width: auto;
   height: auto;
-  background-color: #e9fcff;
+  background-color: #e9f5ff;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -142,7 +121,7 @@
 }
 
 .contact-2 {
-  background-color: #eff4f4;
+  background-color: #f0f8ff;
     /* border: 1px solid rgb(202, 202, 202); */
     padding: 30px;
     height: 80vh;
@@ -153,7 +132,7 @@
 
 .outerForm {
     margin: 20px;
-  
+ 
 }
 
 .formHead p {
@@ -177,13 +156,10 @@
     border-radius: 26px;
   
   }
-
-  
   .inside-form{
     /* background-color: #01a088; */
     padding: 5px 10%;
   }
-
   .Query-input{
      outline: none;
      border: none;
@@ -193,13 +169,19 @@
      float: left;
      width: 75%;
      margin-top: 10px;
-     
   }
   .main-form input{
     width: 97%;
     padding: 13px;
     border: 1px solid #787878;
     border-radius: 4px;
+  }
+  .main-form select{
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #787878;
+    border-radius: 4px;
+    /* font-size: 16px; */
   }
     .submit{
       /* border: 1px solid black; */
@@ -231,8 +213,16 @@
     .outerForm {
       margin: 5px;
       margin-top: 100px;
+      margin-bottom: -70px;
+      /* background-color: #00bbbb; */
   }
-
+  .main-form select{
+    width: 98%;
+    padding: 13px;
+    border: 1px solid #787878;
+    border-radius: 4px;
+    /* font-size: 16px; */
+  }
   .submit{
     /* border: 1px solid red; */
     /* display: flex; */
@@ -248,7 +238,6 @@
       margin: 0px;
       padding: 0;
       margin-top: 20px;
-     
     }
     .submit input:hover{
       border: 2px solid rgb(255, 255, 255);
@@ -264,10 +253,15 @@
       flex-wrap: wrap;
       gap: 0px;
       padding: 0 ;
+      
       /* margin-top: 20px; */
     }
     .contact-2{
-      width: 100%;
+      /* width: 95%; */
+      /* background-color: #0141a0; */
+    
+      display: flex;
+      flex-direction: column;
       height: 70vh;
       padding: 10px;
       padding-right: 0;
@@ -275,9 +269,16 @@
     .contact-1{
       width: 100%;
     }
-   
+    .iframe {
+     border-radius: 1px solid red;
+      height: 60%;
+      width: 96%;
+      border: none;
+    }
     .contactus{
       top: 80px;
+    
+      /* background-color: #00bbbb; */
     }
     .main-form{
         margin: 0px;
@@ -286,8 +287,6 @@
         background-color: #ffffff;
         display: grid;
         place-items: center;
-        /* border-radius: 16px; */
-      
       }
       .Query-input{
         /* height: 27px; */
@@ -308,6 +307,8 @@
       }
   .para{
     text-align: center;
+    /* background-color: chartreuse; */
+    padding: 5px;
   }
 
   .infox{
@@ -320,8 +321,8 @@
    @media only screen and (max-width: 700px){
     .infox{
       box-sizing: border-box;
-      width: 80vw;
-      margin-left: 10vw;
+      width: 90vw;
+      margin-left: 5vw;
     }
    }
 
