@@ -33,7 +33,7 @@
 }
 
 .about-main {
-  padding: 5% 10% 5% 0;
+  padding: 0 10% 5% 0;
   /* margin: 0; */
   background-color: #ffffff;
   display: flex;
@@ -153,8 +153,9 @@
 
 .main {
   padding: 20px;
-  display: flex;
-  justify-content: center;
+  
+  /* display: flex; */
+  /* justify-content: center; */
   /* flex-wrap: wrap; */
   gap: 80px;
 }
@@ -163,17 +164,20 @@
   /* width: 30%; */
   /* margin-right: 8%; */
   display: flex;
-  /* justify-content: space-around; */
-  flex-wrap: nowrap;
-  align-items: center;
+    
+  justify-content: space-around;
+  flex-wrap: wrap;  
+  /* align-items: center; */
   gap: 20px;
   /* background-color: #ffffff; */
   padding: 30px;
 }
 
 .icons {
-  font-size: 70px;
-  margin-bottom: 5px;
+  font-size: 100px;
+  padding-left:  50px;
+  padding-right: 50px;
+  padding-top: 50px;
 }
 
 .rigthdivcard:hover {
@@ -181,25 +185,28 @@
 }
 
 .rigthdivcard {
-  width: auto;
-  border: 2px solid black;
+  align-items: center;
+ 
+  border: 2px solid rgb(234, 236, 230);
+  width: 200px;
   border-radius: 8px;
   padding: 10px;
-  height: auto;
+  height: 200px;
   transition: all 0.5s ease;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.welcome-content {
+ /* .welcome-content {
   height: 350px;
-  display: flex;
+  text-align: center;
+  /* display: flex; */
   /* justify-content: center; */
   /* background-color: #00bbbb; */
   /* flex-direction: column; */
-  justify-content: left;
-  width: 630px;
+  /* justify-content: left; */
+  /* width: 630px;
 
-}
+}  */ 
 
 .welcome-note {
   padding: 30px;
@@ -279,7 +286,7 @@
 }
 
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1000px) {
   .welcome-note h1 {
     font-size: 17px;
   }
@@ -420,7 +427,26 @@
     padding: 0;
   }
 
+  /* .rightdiv{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  } */
+
+  .rightdiv{
+    margin-top: 10px;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(255, 181, 181); */
+  }
+  
+
 }
+
+
 
 
 
@@ -430,5 +456,7 @@
   /* background-color: rgb(255, 181, 181); */
 }
 
-
-
+.nav{
+  position: absolute;
+  top: 0;
+}
