@@ -152,7 +152,7 @@ function Contact() {
             </div>
             <div style={{ paddingLeft: "10px" }}>
               <CiMail style={{ marginRight: "5px", fontSize: "1.3em" }} />
-              <span style={{ fontWeight: "bold" }}>eMail </span>
+              <span style={{ fontWeight: "bold" }}>Email </span>
               brainfilesllp@gmail.com
             </div>
 

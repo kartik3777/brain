@@ -2,15 +2,13 @@ import React from "react";
 import Footer from "./Footer";
 import "./about.css";
 
-
-
 function About() {
   return (
     <>
       <div>
         <div className="results-cont">
           <div className="results-1">
-            <span>RESULTS HIGHLIGHTS FROM OUR FIRST BATCH @ KANPUR CENTER</span>
+            <h4>Results highlights from our first batch of Kanpur Center</h4>
           </div>
           <div className="results-2">
 
@@ -32,7 +30,7 @@ function About() {
                 {" "}
                 <>Aabha</>
               </p>
-              <p>B.Tech IIT Bhu</p>
+              <p>B.Tech IIT BHU</p>
               <p>Mechanical Engineering</p>
             </div>
 

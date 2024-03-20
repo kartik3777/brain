@@ -12,7 +12,7 @@ function NavBar(){
      <Link to="/">
      <div className="heading">
       
-      <img src="./logo.png" alt="" />
+      <img src="./head-2.png" alt="" />
   </div>
      </Link>
         
@@ -24,7 +24,7 @@ function NavBar(){
              <li><Link to="/Programme">Our Programs</Link></li>
              <li><Link to="/Contact">Contact</Link></li>
             
-            <span id='open' onClick={khulJa} className="open" style= {{fontSize: "40px",color:"black", cursor:"pointer"}} >&#9776;</span>
+            <span id='open' onClick={khulJa} className="open" style= {{fontSize: "40px",color:"#8C52FF", cursor:"pointer"}} >&#9776;</span>
 
          </ul>
          </div>

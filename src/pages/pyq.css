@@ -11,6 +11,7 @@
     color: rgb(1, 43, 42);
 }
 .pyq-outbox p{
+    font-size: 19px;
     text-align: center;
 }
 .mani{
@@ -19,23 +20,18 @@
     justify-content: center;
     gap: 50px;
     padding: 10px 100px;
-    
 }
 .mani .style{
-
     width: 400px;
     padding: 20px;
     text-align: center;
-   
 }
 .style li{
     list-style-type: none;
-    
     margin: 10px;
     padding: 10px;
     background-color: rgb(34, 54, 90);
     border-radius: 20px;
-   
 }
 .style h4{
     font-family: Arial, Helvetica, sans-serif;
@@ -47,8 +43,7 @@
 .style li ul li{
     border: none;
     background-color: rgb(255, 255, 255);
-    font-size: 20px;
-    
+    font-size: 16px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -57,7 +52,6 @@
    }
    .pyq-outbox{
     top: 75px;
- 
 }
-    
+
   }

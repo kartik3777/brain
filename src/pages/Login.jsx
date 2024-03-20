@@ -3,11 +3,13 @@ import './login.css'
 
 function Login() {
   
+  console.log("login called");
+
 
   return (
-    <div>
+    <div >
        {/* <h1 id="msg">k</h1> */}
-      <div className=''>
+      <div>
     <div className='login-box'>
        <form >
         <div className='login-heading'>Register</div>

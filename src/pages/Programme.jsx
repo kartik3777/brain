@@ -42,6 +42,7 @@ function Admission() {
 }
 
 function Success() {
+    
     return (
         <div className='success-main'>
            <div className="success-page">
@@ -51,7 +52,7 @@ function Success() {
                     {/* <FontAwesomeIcon className='icons' icon="fa-solid fa-graduation-cap" /> */}
                         {/* <SlChemistry className='icons fa-4x' /> */}
                         <FaBookReader className='icons icon-1' />
-                        <h4>IIT JEE <br />Mains & Advanced</h4>
+                        <h4>IIT JEE <br />Main & Advanced</h4>
                         
                     </div>
 

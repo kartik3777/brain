@@ -23,76 +23,7 @@
   padding: 5% 10% 5% 0;
   background-color: #e1fffa;
 }
-.about-main {
-  padding: 0 10% 5% 0;
-  /* margin: 0; */
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-}
-.scholar-2-content {
-  /* border: 1px solid red; */
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 42%;
-  padding: 5px 30px;
-  height: 97%;
-}
-.scholar-2-content h1 {
-  margin-left: 10px;
-}
-.scholar-1-content h1 {
-  margin-left: 10px;
-  margin-top: 10px;
-}
-.scholar-2-content p {
-  font-size: 19px;
-  /* font-family: 'Times New Roman', Times, serif; */
-  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-  padding: 15px;
-  letter-spacing: 1px;
-  word-spacing: 5px;
-}
-.scholar-2 {
-  /* border: 1px solid black; */
-  box-shadow: 0px 0px 10px grey;
-  height: 550px;
-  background-repeat: no-repeat;
-  background-image: url("./scholar.png");
-  background-size: 100% 100%;
-  padding: 3% 3%;
-  background-color: rgb(208, 253, 255);
-}
-.scholar-1-content {
-  /* border: 1px solid red; */
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 42%;
-  padding: 5px 30px;
-  /* height: 97%; */
-}
-.scholar-1-content p {
-  font-size: 19px;
-  /* font-family: 'Times New Roman', Times, serif; */
-  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-  padding: 10px;
-  letter-spacing: 1px;
-  word-spacing: 5px;
-}
-.scholar-1 {
-  /* border: 1px solid black; */
-  box-shadow: 0px 0px 10px grey;
-  /* height: 550px; */
-  background-repeat: no-repeat;
-  background-image: url("./monitor-img.jpg");
-  background-size: 100% 100%;
-  padding: 3% 3%;
-  display: flex;
-  justify-content: right;
-  background-color: rgb(208, 253, 255);
-}
+
 .monitor {
   height: 100px;
   background-color: cadetblue;
@@ -124,14 +55,22 @@
 }
 .main {
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  align-items: center;
   padding: 20px;
   gap: 80px;
+  background-color: #D8B5FF;
+  /* background: url("welcome.png") no-repeat right top;  */
+   background-image: url("welcome.png");
+  background-repeat: no-repeat;
+ background-size: 100% 100%;
+  height: 100vh;
 }
 .success-page h1{
   color: rgb(105, 25, 11);
   text-align: center;
   margin: 10px;
+  margin-top: 100px;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -162,47 +101,72 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 .welcome-note {
-  padding: 30px;
+  height: 490px;
+  padding: 30px 60px;
   text-align: center;
-  width: 80%;
-  margin-top: -20px;
-  /* background-color: aqua; */
+  width: 40%;
+/* background-color: #52ffee; */
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 50px;
 }
 .welcome-note h1 {
   margin: 10px;
   /* margin-top: 30px; */
   font-size: 3vw;
 }
+.about-main {
+  /* padding: 0 10% 5% 0; */
+  /* margin: 0; */
+  background-color: #8C52FF;
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  border-bottom: 4px solid #8C52FF;
+}
 .about-box {
   padding: 10px;
-  /* background-color: rgb(215, 250, 241); */
-  background-color: #ecf4ff;
+  /* background-color: rgb(64, 126, 111); */
+  
+  color: rgb(0, 0, 0);
 font-family: Arial, Helvetica, sans-serif;
+background-image: url("about-back-2.png");
+background-size: 100% 100%;
   /* background-color: #f0f6ff; */
+  transition: all 400ms;
+}
+.about-box:hover{
+  color: rgb(255, 255, 255);
+  background-color: #8C52FF;
+  background-image: none;
 }
 .about-content p {
   font-size: 21px;
   word-spacing: 3px;
   font-family: "Mukta", sans-serif;
+ 
 }
 .about-content {
+  /* border: 1px solid red; */
   background: transparent;
-  color: rgb(0, 0, 0);
-  padding: 7% 10%;
+
+  padding: 5px 10%;
   border-radius: 5%;
 }
 .about-content h1 {
   margin-left: 15px;
-  margin: 15px;
+  margin: 0px;
+  margin-bottom: 20px;
+  margin-top: -20px;
 }
 .welcome-note h2 {
   font-size: 28px;
   color: rgb(104, 85, 198);
+  margin: 50px 0px;
   /* color: #0c8997; */
 }
 .welcome-note p {
   margin: 10px;
-  margin-top: 30px;
+  margin-top: 40px;
   font-size: 16px;
   text-align: justify;
   letter-spacing: 1px;
@@ -219,69 +183,6 @@ font-family: Arial, Helvetica, sans-serif;
 
 
 @media only screen and (max-width: 1000px) {
-  .welcome-note h1 {
-    font-size: 19px;
-  }
-
-  .welcome-content {
-    height: 200px;
-  }
-
-  .main {
-    flex-wrap: wrap;
-    margin-top: 70px;
-    background-color: rgb(255, 255, 255);
-  }
-
-  .welcome-note h2 {
-    font-size: 22px;
-    /* background-color: #D8B5FF; */
-  }
-
-  .welcome-note p {
-    font-size: 15px;
-    margin: 20px 0px;
-    /* background-color: #D8B5FF; */
-  }
-
-  .welcome-note {
-    width: auto;
-    padding: 10px;
-    /* width: 100%; */
-
-  }
-
- 
-
-  .scholar-1 {
-    background-image: none;
-    background-size: auto;
-    padding: 3% 3%;
-    display: flex;
-    justify-content: center;
-    background-color: transparent;
-    box-shadow: none;
-    height: auto;
-    margin: auto;
-  }
-
-  .scholar-1-content h1 {
-    text-align: center;
-    font-size: 26px;
-    border-bottom: 1px solid black;
-  }
-
-  .scholar-1-content p {
-    font-size: 16px;
-    text-align: justify;
-
-  }
-
-  .scholar-1-content {
-    width: auto;
-    padding: 0;
-    height: auto;
-  }
 
   .out-box-1 {
     padding: 0;
@@ -289,12 +190,16 @@ font-family: Arial, Helvetica, sans-serif;
 
   .about-main {
     padding: 0;
+    border: none;
+    box-shadow: none;
+    /* margin: 0; */
     /* background-color: #dafef6; */
   }
 
   .about-box {
-    /* background-image: none;
-  background-size: auto; */
+    background-image: none;
+    background-color: #8C52FF;
+    color: white;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -322,37 +227,7 @@ font-family: Arial, Helvetica, sans-serif;
   .about-content h1 {
     text-align: center;
     font-size: 26px;
-    border-bottom: 1px solid black;
-  }
-
-  .scholar-2 {
-    background-image: none;
-    background-size: auto;
-    padding: 3% 3%;
-    display: flex;
-    justify-content: center;
-    background-color: transparent;
-    box-shadow: none;
-    height: auto;
-    margin: auto;
-  }
-
-  .scholar-2-content h1 {
-    text-align: center;
-    font-size: 26px;
-    border-bottom: 1px solid black;
-  }
-
-  .scholar-2-content p {
-    font-size: 16px;
-    text-align: justify;
-
-  }
-
-  .scholar-2-content {
-    width: auto;
-    padding: 0;
-    height: auto;
+    /* border-bottom: 1px solid black; */
   }
 
   .out-box-2 {
@@ -406,6 +281,49 @@ font-family: Arial, Helvetica, sans-serif;
     /* background-color: rgb(255, 181, 181); */
   }
   
+
+}
+
+
+@media only screen and (max-width: 700px) {
+  
+  .main {
+    flex-wrap: wrap;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+    background-image: url("welcome-phone-3.png");
+    height: 590px;
+    align-items: flex-start;
+  }
+  .welcome-note h1 {
+    font-size: 22px;
+    margin-top: 5px;
+  }
+  .welcome-note h2 {
+    /* width: 100%; */
+    font-size: 17px;
+    margin: 10px;
+    margin-top: 20px;
+    /* background-color: #D8B5FF; */
+  }
+  .welcome-note p {
+    font-size: 15px;
+    margin: 20px 0px;
+   /* font-family: Arial, Helvetica, sans-serif; */
+    /* margin-top: 10px; */
+    /* background-color: #D8B5FF; */
+  }
+  .welcome-note {
+    width: auto;
+    padding: 10px;
+    /* height: 370px; */
+    /* background-color: aqua; */
+    /* width: 100%; */
+
+  }
+
+ 
+
 
 }
 
