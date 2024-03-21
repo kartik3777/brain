@@ -1,8 +1,10 @@
 import React from "react";
 import "./contact.css";
-import { CiPhone } from "react-icons/ci";
-import { CiMail } from "react-icons/ci";
+import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
+import EmailIcon from '@mui/icons-material/Email';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 import Footer from "./Footer";
+import Profile from "./Profile"
 
 //https://script.google.com/macros/s/AKfycbxV2GcO0XcD5BWxlaCdIZ2LicXkdFVfD37xLh54GIcY-7zfLUZJKMiHXRHm_hm4SlYm/exec
 
@@ -58,6 +60,7 @@ function FormContact() {
 
   return (
     <>
+    <div className="form-brainfiles">
       <div className="outerForm">
         <div className="formHead">
           <span>Are You a JEE/NEET(UG) Aspirant</span>
@@ -119,14 +122,81 @@ function FormContact() {
           </form>
         </div>
       </div>
+      </div>
     </>
   );
+}
+
+function Map(){
+   return <>
+       <div className="map">
+            <iframe
+              className="iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.3635745595734!2d80.29188177487998!3d26.47623617871268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c380ddc4e9dc1%3A0xc240100d0c205a4f!2sAvon%20Market%2C%20Ambedkar%20Nagar%2C%20Navin%20Nagar%2C%20Kakadeo%2C%20Kanpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1710053958764!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+            </div>
+   </>
 }
 
 function Contact() {
   return (
     <>
-      <div className="contactus">
+      <div className="contact-cont">
+            <div className="contact-2">
+            <div className="para">
+              <p>
+                <span>Reach out to us</span>
+                <br />
+                Get your questions answered about learning with Brain Files.
+              </p>
+            </div>
+
+            <div className="contact-detail-brain">
+            <div className="contact-phone-email" >
+              <div className="contact-icons" >
+              <PhoneInTalkIcon style={{color:"blue"}} />
+              <span style={{color:"blue", fontWeight: 600}}> Call</span>
+              </div>
+              +91 8840553669
+            </div>
+
+            <div  className="contact-phone-email">
+              <div className="contact-icons"  >
+              <EmailIcon style={{color:"blue"}} />
+              <span style={{color:"blue", fontWeight: 600}}> Email</span>
+              </div>
+              brainfilesllp@gmail.com
+            </div>
+
+            <div className="contact-phone-email">
+            <div className="contact-icons" >
+            <LocationOnIcon style={{color:"blue"}}  />
+              <span style={{color:"blue", fontWeight: 600}}> Address</span>
+              </div>
+            <p className="contact-address">
+              Brain Files LLP. 117/N/18, 1st Floor, Avon Market, Kakadeo, Kanpur
+              Nagar, 208025
+            </p>
+            </div>
+
+            </div>
+             <Profile />
+            </div>
+            <div className="brain-form">
+            <FormContact />
+            </div>
+        
+      </div>
+      <Map />
+      <Footer />
+
+
+      {/* <div className="contactus">
         <h1>Contact Us</h1>
         <div className="contact-page">
           <div className="contact-2">
@@ -160,20 +230,13 @@ function Contact() {
               Brain Files LLP. 117/N/18, 1st Floor, Avon Market, Kakadeo, Kanpur
               Nagar, 208025
             </p>
-            <iframe
-              className="iframe"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.3635745595734!2d80.29188177487998!3d26.47623617871268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c380ddc4e9dc1%3A0xc240100d0c205a4f!2sAvon%20Market%2C%20Ambedkar%20Nagar%2C%20Navin%20Nagar%2C%20Kakadeo%2C%20Kanpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1710053958764!5m2!1sen!2sin"
-              width="600"
-              height="450"
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+           
           </div>
         </div>
       </div>
+      <Map />
       <FormContact />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }

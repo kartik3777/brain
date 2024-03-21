@@ -3,9 +3,8 @@ import "./pages.css";
 import Login from './Login';
 import Footer from './Footer';
 import "./contact.css";
-import { CiPhone } from "react-icons/ci";
-import { CiMail } from "react-icons/ci";
 import { motion, useInView, useAnimation } from 'framer-motion';
+import Profile from './Profile';
 
 
 function Home() {
@@ -110,36 +109,7 @@ Our scholastic series are deeply ingrained with the core values of Determination
               {/* "Experience the educational revolution with Brain Files! Join us and
               embark on your journey to success!" */}
             </p>
-            <div className="infox">
-              <h1>Founder</h1>
-              <div className='info2'>
-              <div className="profile">
-                <div className="dp">
-                  <img src="devesh-sir.jpg" alt="" />
-                </div>
-                <div className="upper-details">
-                  <h3 className="name">
-                    Devesh Dixit
-                  </h3>
-                  <h4>B.Tech(IIT-BHU)</h4>
-                  <div className="phone">
-                    <CiPhone style={{ marginRight: "5px", fontSize: "23px" }} />
-                    <p> +91 8840553669</p>
-                  </div>
-                  <div className="phone">
-                    <CiMail style={{ marginRight: "5px", fontSize: "24px" }} />
-                    <p> brainfilesllp@gmail.com</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="exp">
-                <p>Educator for IIT JEE Advanced Mentor and Councellor</p>
-                {/* <p>Chemistry Faculty at CSRL Super 30</p>
-                <p>Center Director - Resonance Kanpur U.P.</p> */}
-              </div>
-              </div>
-            </div>
+            <Profile />
           </div> 
 
       {/* <Second /> */}

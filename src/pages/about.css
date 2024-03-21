@@ -124,13 +124,9 @@ border: 1px solid rgba(0, 0, 0, 0.21); */
 }
 .bachhe-2{
     height: 240px;
-    /* border: 1px solid red; */
-    /* width: auto; */
     display: flex;
     gap: 40px;
-    /* padding: 10px; */
-    margin: 10px 0px;
-    
+    margin: 10px 0px;   
 }
 .results-cont{
     background-color: rgb(255, 255, 255); 
@@ -138,9 +134,8 @@ border: 1px solid rgba(0, 0, 0, 0.21); */
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin: 20px 50px;
+    margin: 10px 50px;
     margin-top: 100px;
-    box-shadow: 0px 0px 2px rgb(212, 212, 212);
     z-index: -2;
     overflow: hidden;
 border-radius: 16px;
@@ -156,30 +151,22 @@ border: 1px solid #e1e1e1;
 }
 .results-1 h4{
     font-size: 1.9vw;
-    /* font-weight: 600; */
      color: rgb(92, 37, 27);
-     /* font-weight: 500; */
      font-family: Arial, Helvetica, sans-serif;
 }
 .results-2{
-    /* width: 100%; */
     color: rgb(0, 0, 0);
-    /* border: 1px solid  black; */
-    /* height: 200px; */
-    /* padding: 10px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 3%;
 }
 .results-3{
-    /* width: 100%; */
-    /* border: 1px solid  black; */
-     /* height: 200px; */
      display: flex;
     padding: 10px;
      justify-content: center;
      margin-bottom: 100px;
+     margin-top: 30px;
 }
 .result-word{
    background-color: #ffffff;
@@ -219,7 +206,6 @@ border: 1px solid #e1e1e1;
         font-size: 15px;
     }
      .result-word p{
-      
          margin: 2px;
          word-spacing: 0px;
      }
@@ -229,16 +215,20 @@ border: 1px solid #e1e1e1;
        top: 80px;
        margin: 0px;
     }
-    .results-1 span{
+    .results-1 h4{
         font-size: 18px;
-        /* font-weight: 500; */
         margin: 10px;
         text-align: center;
-        color: rgb(0, 0, 0);
+        color: rgb(92, 37, 27);
    }
     .results-2{
         flex-wrap: wrap;
         gap: 10px;
+        margin-top: 20px;
+    }
+    .results-3{
+        margin-top: 60px;
+        /* margin-bottom: 50px; */
     }
     .bachhe-1{
         gap: 5px;

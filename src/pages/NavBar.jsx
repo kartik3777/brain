@@ -24,7 +24,7 @@ function NavBar(){
              <li><Link to="/Programme">Our Programs</Link></li>
              <li><Link to="/Contact">Contact</Link></li>
             
-            <span id='open' onClick={khulJa} className="open" style= {{fontSize: "40px",color:"#8C52FF", cursor:"pointer"}} >&#9776;</span>
+            <span id='open' onClick={khulJa} className="open" style= {{fontSize: "40px",color:"#4c13bd", cursor:"pointer"}} >&#9776;</span>
 
          </ul>
          </div>
