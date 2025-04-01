@@ -1,0 +1,68 @@
+
+.sir-out{
+    width: auto;
+    min-height: 500px;
+    background-color: rgb(250, 249, 254);
+    padding: 50px;
+    /* display: flex;
+    flex-direction: column; */
+    /* align-items: center; */
+}
+.data-box{
+    padding: 10px;
+    min-height: 250px;
+    width: 350px;
+    margin: 10px;
+}
+.data-box p{
+     text-align: center;
+     color: rgb(35, 35, 35);
+    font-size: 17px;
+}
+.pic-box{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.pic-box img{
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+}
+#sir-name{
+  color: rgb(53, 4, 160);
+  font-weight: 600;
+  font-size: 22px;
+}
+.sir-msg{
+    font-size: 18px;
+    line-height: 1.5;
+    word-spacing: 3px;
+    font-family: "Mukta", sans-serif;
+    margin-top: 20px;
+    text-align: justify;
+}
+.sir-details{
+ float: right;
+ display: flex;
+ justify-content: center;
+}
+
+@media only screen and (max-width: 1000px){
+    .sir-out{
+        width: auto;
+        min-height: 500px;
+        background-color: aliceblue;
+        padding: 10px;
+    }
+    #sir-name{
+        font-size: 20px;
+      }
+    .msg-head{
+        font-size: 20px;
+    }
+    .sir-details{
+        float: none;
+     }
+    
+}

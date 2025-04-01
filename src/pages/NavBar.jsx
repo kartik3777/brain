@@ -19,9 +19,9 @@ function NavBar(){
          <ul>
            
              <li><Link to="/">Home</Link></li>
-             <li><Link to="/Success">Our Success</Link></li>
-             <li><Link to="/Pyq">Resources</Link></li>
              <li><Link to="/Programme">Our Programs</Link></li>
+             <li><Link to="/Pyq">Resources</Link></li>
+             <li><Link to="/Success">Our Success</Link></li>
              <li><Link to="/Contact">Contact</Link></li>
             
             <span id='open' onClick={khulJa} className="open" style= {{fontSize: "40px",color:"#4c13bd", cursor:"pointer"}} >&#9776;</span>
@@ -34,9 +34,9 @@ function NavBar(){
     <ul id="menu-bar" onClick={khulJa}>
           {/* <li><Link to="/Login">Login</Link></li> */}
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/Success">Our Success</Link></li>
-          <li><Link to="/Pyq">Resources</Link></li>
           <li><Link to="/Programme">Our Programs</Link></li>
+          <li><Link to="/Pyq">Resources</Link></li>
+          <li><Link to="/Success">Our Success</Link></li>
           <li><Link to="/Contact">Contact</Link></li>
           
          {/* <span id='open' className="open" style= {{fontSize: "40px",color:"black", cursor:"pointer"}} >&#9776;</span> */}

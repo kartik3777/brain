@@ -50,20 +50,21 @@
   display: flex;
   flex-direction: column;
   height: auto;
+  /* gap: 0; */
 }
 .main {
   display: flex;
   justify-content: left;
   align-items: center;
   padding: 20px;
-  gap: 80px;
-  background-color: #D8B5FF;
+  gap: 60px;
+  background-color: #8c52ff;
+  margin-top: 70px;
   /* background: url("welcome.png") no-repeat right top;  */
-   background-image: url("welcome.png");
+   background-image: url("../../public/ans-8.png");
   background-repeat: no-repeat;
  background-size: 100% 100%;
  height: auto;
-  /* height: 100vh; */
 }
 .success-page h1{
   color: rgb(105, 25, 11);
@@ -103,10 +104,11 @@
   height: 490px;
   padding: 30px 60px;
   text-align: center;
-  width: 40%;
+  width: 44%;
 /* background-color: #52ffee; */
 font-family: Arial, Helvetica, sans-serif;
-margin-top: 50px;
+margin-top: 20px;
+margin-left: 60px;
 }
 .welcome-note h1 {
   margin: 10px;
@@ -146,7 +148,6 @@ background-size: 100% 100%;
 .about-content {
   /* border: 1px solid red; */
   background: transparent;
-
   padding: 5px 10%;
   border-radius: 5%;
 }
@@ -166,10 +167,13 @@ background-size: 100% 100%;
   margin: 10px;
   margin-top: 40px;
   font-size: 16px;
-  text-align: justify;
-  letter-spacing: 1px;
-  word-spacing: 5px;
+  text-align: left;
+  /* letter-spacing: 1px; */
+  word-spacing: 3px;
   font-family: "Roboto", sans-serif;
+  margin-left: 35px;
+  line-height: 23px;
+
 }
 .rightdiv h4{
   color: rgb(22, 57, 213);
@@ -262,17 +266,19 @@ background-size: 100% 100%;
   .success-page h1{
     font-size: 18px;
     text-decoration: none;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     /* border-bottom: 1px solid rgb(182, 182, 182); */
   }
-  .success-page{
+  /* .success-page{
     position: relative;
     top: 80px;
     margin: 0;
     padding: 0;
-   
+ 
+  } */
+  .success-main{
+    min-height: 60vh;
   }
-
   * {
     margin: 0;
     padding: 0;
@@ -287,11 +293,12 @@ background-size: 100% 100%;
   
   .main {
     flex-wrap: wrap;
-    margin-top: 10px;
+    margin-top: 70px;
     background-color: rgb(255, 255, 255);
-    background-image: url("welcome-phone-3.png");
+    background-image: url("welcome-phone-4.png");
     height: 590px;
     align-items: flex-start;
+    padding: 10px;
   }
   .welcome-note h1 {
     font-size: 22px;
@@ -307,13 +314,13 @@ background-size: 100% 100%;
   .welcome-note p {
     font-size: 15px;
     margin: 20px 0px;
-   /* font-family: Arial, Helvetica, sans-serif; */
-    /* margin-top: 10px; */
-    /* background-color: #D8B5FF; */
+    line-height: 20px;
+    text-align: justify;
   }
   .welcome-note {
     width: auto;
     padding: 10px;
+    margin-left: 0px;
     /* height: 370px; */
     /* background-color: aqua; */
     /* width: 100%; */

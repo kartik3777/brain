@@ -1,0 +1,29 @@
+
+.qr-out{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(237, 237, 237);
+    min-height: 200px;
+    width: auto;
+    padding: 15px 30px;
+    gap: 35px;
+    border-radius: 10px;
+
+}
+
+.qr-box{
+    display: flex;
+    flex-direction: column;
+}
+.qr-box img{
+   height: 160px;
+   width: 160px;
+}
+.box-1-head{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

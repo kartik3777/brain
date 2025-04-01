@@ -31,14 +31,15 @@
   :any-link {
     /* font-weight: 500; */
     text-decoration: none;
-    color: navy;
+    color: #6223de;
     font-family: "Roboto", sans-serif;
     font-weight: 430;
   font-style: normal;
     /* font-weight: 500; */
   }
   :any-link:hover {
-    color: rgb(26, 62, 225);
+    color: rgb(2, 182, 214);
+    /* color: rgb(26, 62, 225); */
   }
 
 @media only screen and (max-width: 1000px) {

@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react'
 import "./pages.css";
-import Login from './Login';
-import Footer from './Footer';
-import "./contact.css";
+import Login from '../components/Login/Login'
+import Footer from '../components/Footer/Footer';
+// import "./contact.css";
 import { motion, useInView, useAnimation } from 'framer-motion';
-import Profile from './Profile';
+import Sir from './Sir';
 
 
 function Home() {
@@ -24,13 +24,14 @@ mainControls.start("visible")
 
   const [is, setIs] = useState(false);
   function showLogin(){
-    console.log("showlogin called");
+    // console.log("showlogin called");
+    // setTimeout(myGreeting, 0);
     setTimeout(myGreeting, 4000);
     function myGreeting(){
        setIs(true)
        console.log(is);
     }
-    console.log(is);
+    // console.log(is);
   }
   return (
     <motion.div 
@@ -54,7 +55,7 @@ mainControls.start("visible")
           <h2>Unique Education System that pushes you to success</h2>
           {/* <p>Embark on your journey to IIT success with our digital coaching. Tailored guidance, comprehensive resources, and expert support await you. Let's work together to conquer the JEE and turn your dream of becoming an IITian into reality!</p> */}
           <p>
-          Dreaming of studying at the prestigious IIT? Make your aspirations come true with our cutting-edge Digital Course, tailored specifically for aspiring engineers like you! Our innovative program is meticulously crafted to equip you with the professional guidance, abundant resources, and expert support needed to conquer the rigorous marathon of securing a spot at the top Engineering Institution in India.
+          Dreaming of studying at the prestigious IIT? Make your aspirations come true with our cutting-edge Digital Course, tailored specifically for aspiring engineers like you! Our innovative program is meticulously crafted to equip you with the professional guidance, abundant resources, and expert support needed to conquer the rigorous marathon of securing a spot at the top Engineering Institutions in India.
 
           </p>
         </div>
@@ -93,26 +94,8 @@ Our scholastic series are deeply ingrained with the core values of Determination
             </p>
           </div>
         </div>
-      </motion.div>
-      <div className="contact-1">
-            <p
-              style={{
-                width: "90%",
-                padding: "15px",
-                lineHeight: "1.3",
-                fontSize: "20px",
-                backgroundColor: "",
-                margin: "10px",
-                textAlign: "left"
-              }}
-            >
-              {/* "Experience the educational revolution with Brain Files! Join us and
-              embark on your journey to success!" */}
-            </p>
-            <Profile />
-          </div> 
-
-      {/* <Second /> */}
+      </motion.div>          
+            <Sir />
       <Footer />
     </motion.div>
   )

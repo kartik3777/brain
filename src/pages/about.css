@@ -12,7 +12,7 @@
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
 }
-.addmi h2{
+.addmi h2{ 
     padding: 15px 0px;
     padding-bottom: 5px;
    /* color: rgb(19, 214, 204); */
@@ -22,12 +22,6 @@
    display: grid;
    place-items: center;
    /* box-shadow: 0px 3px 5px rgb(171, 171, 180); */
-}
-#add{
-  /* padding: 10px; */
-   /* margin-top: 10px; */
-   /* margin: 10px; */
-   /* border: 1px solid black; */
 }
 body{
     margin: 0;
@@ -42,7 +36,7 @@ body{
 @media only screen and (max-width: 700px) {
    .addmi{
       position: relative;
-      top: 70px;
+      top: 10px;
    }
    .footer{
     margin-top: 90px;
@@ -54,223 +48,12 @@ body{
       width: auto;
       padding-bottom: 10px;
    }
-   #add{
-    /* padding: 0px 10px; */
-   }
    .addmi ul li{
     margin: 10px;
     margin-top: 10px;
     font-size: 15px;
     color: rgb(0, 0, 0);
-}
-  
-  }
-  
-
-
-
-
-  
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-.bachhi-dp{
-    height: 120px;
-    width: 120px;
-    padding: 1px;
-    margin: 10px 30px;
-    /* overflow: hidden; */
-    border-radius: 50%;
-    background-color: rgb(220, 249, 255);
-}
-.bachhi-dp img{
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    /* filter: drop-shadow(3px 3px 5px rgb(142, 142, 142)); */
-}
-.bachhi{
-    height: 210px;
-    padding: 10px;
-    /* border: 1px solid rgb(135, 235, 255); */
-    border: 1px solid #8C52FF;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(255, 255, 255);
-    border-radius: 16px;
-    /* box-shadow: 0px 0px 9px rgb(145, 181, 181); */
-    /* background: rgba(102, 162, 245, 0.19);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 3, 45, 0.1);
-backdrop-filter: blur( 10px);
--webkit-backdrop-filter: blur(3px);
-border: 1px solid rgba(0, 0, 0, 0.21); */
-}
-.bachhi p {
-    margin-top: 2px;
-    font-size: 15px;
-}
-.result-name {
-    font-size: 17px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #8C52FF;
-   padding: 3px;
-   border-bottom: 1px solid #8C52FF;
-}
-.bachhe-1{
-    height: 240px;
-    display: flex;
-    gap: 40px;
-    margin: 10px 0px;
-}
-.bachhe-2{
-    height: 240px;
-    display: flex;
-    gap: 40px;
-    margin: 10px 0px;   
-}
-.results-cont{
-    background-color: rgb(255, 255, 255); 
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 10px 50px;
-    margin-top: 100px;
-    z-index: -2;
-    overflow: hidden;
-border-radius: 16px;
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-border: 1px solid #e1e1e1;
-
-}
-.results-1{
-    border-bottom: 1px solid rgb(255, 255, 255);
-    height: 60px;
-    display: grid;
-    place-items: center;
-}
-.results-1 h4{
-    font-size: 1.9vw;
-     color: rgb(92, 37, 27);
-     font-family: Arial, Helvetica, sans-serif;
-}
-.results-2{
-    color: rgb(0, 0, 0);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3%;
-}
-.results-3{
-     display: flex;
-    padding: 10px;
-     justify-content: center;
-     margin-bottom: 100px;
-     margin-top: 30px;
-}
-.result-word{
-   background-color: #ffffff;
-   color: rgb(0, 0, 0);
-   border: 2px solid #8C52FF;
-   border-left: 10px solid #8C52FF;
-   border-radius: 8px;
-   font-family: Arial, Helvetica, sans-serif;
-   padding: 20px 40px;
-}
-
-.result-word ul li{
-    word-spacing: 2px;
-   display: flex;
-   align-items: center;
-   gap: 7px;
-   /* border: 1px solid aqua; */
-}
-.result-word ul li p{
-  font-size: 250%;
-  color: rgb(119, 101, 255);
-}
-.result-word ul {
-    list-style: none;
-    font-size: 18px;
-}
-
-@media only screen and (max-width: 1000px) {
-    .result-word{
-        color: rgb(4, 50, 85);
-        font-size: 16px;
-        font-family: Arial, Helvetica, sans-serif;
-        padding: 5px 5px;
-     }
-     .result-word ul {
-        list-style: none;
-        font-size: 15px;
-    }
-     .result-word p{
-         margin: 2px;
-         word-spacing: 0px;
-     }
-    .results-cont{
-        width: 100%;
-        position: relative;
-       top: 80px;
-       margin: 0px;
-    }
-    .results-1 h4{
-        font-size: 18px;
-        margin: 10px;
-        text-align: center;
-        color: rgb(92, 37, 27);
    }
-    .results-2{
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 20px;
-    }
-    .results-3{
-        margin-top: 60px;
-        /* margin-bottom: 50px; */
-    }
-    .bachhe-1{
-        gap: 5px;
-         margin: 15px;
-         height: 210px;
-         /* width: 360px; */
-    }
-    .bachhe-2{
-        height: 210px;
-        gap: 5px;
-        /* padding: 10px; */
-        margin: 10px 0px;
-    }
-    .bachhi-dp{
-        height: 100px;
-        width: 100px;
-        margin: 10px 20px;
-        /* background-color: rgb(255, 255, 255); */
-    }
-    .bachhi-dp img{
-        height: 100px;
-        width: 100px;
-    }
-    .bachhi{
-        height: 180px;
-        /* width: 150px; */
-        margin: 10px;
-        padding: 10px;
-        /* border: 1px solid rgb(0, 0, 0); */
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-   
-    .bachhi p{
-        font-size: 13px;
-    }
-
-    .addmi{
-        margin-top: 10px;
-    }
-     
 }
- 
-
   
+

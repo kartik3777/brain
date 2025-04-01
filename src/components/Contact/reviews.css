@@ -1,0 +1,16 @@
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Automatically adjust column number */
+    grid-gap: 10px; /* Ensure consistent 10px gap between rows and columns */
+    justify-items: center;
+    padding-bottom: 20px;
+  }
+  
+  .image-item {
+    width: 100%; /* Let the image take full width of the grid cell */
+    height: auto; /* Maintain the natural aspect ratio */
+    object-fit: contain; /* Ensure the entire image fits within the grid cell without distortion */
+    display: block;
+   border: 2px solid lightblue;
+  }
+  
